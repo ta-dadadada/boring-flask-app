@@ -1,4 +1,3 @@
-import os
 from flask import Flask, render_template
 
 
@@ -18,7 +17,3 @@ counter = Counter()
 def home():
     counter.up()
     return render_template('home.html', count=counter.total)
-
-
-if __name__ == '__main__':
-    app.run(host=os.environ.get('FLASK_HOST'), port=os.environ.get('FLASK_PORT'))
