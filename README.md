@@ -1,6 +1,6 @@
 # Boring Flask App
 
-python version: 3.7.2
+python version: 3.6.8
 
 ## How to use for newbie
 
