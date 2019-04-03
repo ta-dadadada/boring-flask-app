@@ -16,11 +16,25 @@ pip install -r requirements.txt
 ### Innocent run
 
 ```bash
-python app.py
+python run_local.py 
 ```
 
 ### The lesser of two evils
 
 ```bash
-FLASK_HOST='0.0.0.0' FLASK_PORT=5001 python run.py
+FLASK_HOST='0.0.0.0' FLASK_PORT=5001 python run_local.py
+```
+
+## Using Docker: simple http server by uwsgi http mode
+
+### Image build
+
+```bash
+docker build -t boring-flask-app .
+```
+
+### Run
+
+```bash
+ docker run -p <your port>:8080 --rm boring-flask-app 
 ```
