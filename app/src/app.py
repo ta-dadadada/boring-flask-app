@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 
 
 class Counter:
@@ -14,6 +14,11 @@ counter = Counter()
 
 
 @app.route('/')
+def ping():
+    return jsonify({'message': 'This is a boring flask application.'})
+
+
+@app.route('/count')
 def home():
     counter.up()
     return render_template('home.html', count=counter.total)
