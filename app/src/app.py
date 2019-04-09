@@ -14,7 +14,8 @@ counter = Counter()
 
 
 @app.route('/')
-def ping():
+@app.route('/health_check')
+def health_check():
     return jsonify({'message': 'This is a boring flask application.'})
 
 
