@@ -38,3 +38,18 @@ docker build -t boring-flask-app .
 ```bash
  docker run -p <your port>:8080 --rm boring-flask-app 
 ```
+
+## Using docker-compose
+
+### Image build
+
+```bash
+docker-compose build
+```
+
+### Up
+
+
+```bash
+docker-compose up
+```
