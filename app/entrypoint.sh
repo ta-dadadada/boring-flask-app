@@ -7,4 +7,5 @@ exec uwsgi \
   --plugins logfile \
   --http :8080\
   --wsgi-file ${MODULE_PATH} \
-  --callable app \
+  --callable app
+
