@@ -5,7 +5,7 @@ exec uwsgi \
   --plugins http \
   --plugins python3 \
   --plugins logfile \
-  --http :8080\
+  --http-socket 0.0.0.0:9000\
   --wsgi-file ${MODULE_PATH} \
   --callable app
 

@@ -31,6 +31,6 @@ ADD --chown=app:app src ./src
 
 # ユーザの切替
 USER app
-EXPOSE 8080
+EXPOSE 9000
 ENTRYPOINT ["./entrypoint.sh"]
 
